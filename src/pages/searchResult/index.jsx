@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useSearchParams } from 'react-router-dom';
 import Header from './layout/Header';
+import Footer from './layout/Footer'
 import MockResult from './../../assets/mockResult.png';
 
 const Container = styled.div`
@@ -81,6 +82,7 @@ const SearchResult = () => {
 				{renderSimillarKeywords()}
 				<iframe style={{ marginTop: 60 }} src="https://cm2-elasticsearch.kb.westeurope.azure.elastic-cloud.com:9243/app/dashboards#/view/a3a43cf0-9b88-11ec-a52f-fb7d39c646ea?auth_provider_hint=anonymous1&embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3A'2015-03-04T06%3A27%3A04.813Z'%2Cto%3Anow))" height="600" width="1920"></iframe>
 			</Content>
+			<Footer/>
 		</Container>
 	);
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import searchIcon from '../../assets/search.svg'
+import media from '../../helpers/media';
 
 const SearchbarContainer = styled.div`
 	background: #FFFFFF;
@@ -30,6 +31,10 @@ const SearchInput = styled.input`
 	border: none;
 	outline: none;
 	flex: 1;
+
+	${media.mobile`
+	font-size:14px;
+	`}
 
 	& ::placeholder { 
 		opacity: 1;
