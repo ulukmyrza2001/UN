@@ -1,10 +1,10 @@
-import {
-	Routes,
-	Route,
-} from 'react-router-dom';
+import {Routes,Route} from 'react-router-dom';
 import Lading from './pages/landing';
 import SearchResult from './pages/searchResult';
 import { HOME_PAGE_LINKS, ROUTES } from './constants/routes';
+import Terms from './pages/terms/index'
+import Partners from './pages/partners';
+import Privacy from './pages/privacy/index'
 import AboutUs from './pages/About';
 
 function App() {

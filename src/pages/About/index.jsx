@@ -35,7 +35,7 @@ const Title = styled.h1`
 	line-height: 72px;
 	text-transform: uppercase;
 	color: #ffffff;
-	${media.mobile`
+	${media.tablet`
     font-size: 44px;
     line-height: 57px;
     `}
